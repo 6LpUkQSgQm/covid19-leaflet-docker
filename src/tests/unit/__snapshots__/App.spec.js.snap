@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`App.vue should have a v-app 1`] = `
-<v-app-stub id="app" class="my-app">
-  <navigation-stub></navigation-stub>
-  <dashboard-stub></dashboard-stub>
-  <footer-stub></footer-stub>
-</v-app-stub>
-`;

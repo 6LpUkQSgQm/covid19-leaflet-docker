@@ -13,6 +13,7 @@ const state = {
   loadingMap: true,
   loadingChart: false,
   loadingSummaryWorld: true,
+  theme: "light",
 };
 const getters = {
   getSummaryGlobal: (state) => {
@@ -51,6 +52,7 @@ const getters = {
   getLoadingSummaryWorld: (state) => {
     return state.loadingSummaryWorld;
   },
+  theme: (state) => state.theme,
 };
 const mutations = {
   SET_COUNTRY(state, country) {
@@ -93,48 +95,75 @@ const mutations = {
       }
     });
   },
+  theme(state, payload) {
+    state.theme = payload;
+  },
 };
 const actions = {
   async countries({ commit }) {
-    const response = await axios.get(process.env.VUE_APP_API_COUNTRIES);
-    commit("SET_COUNTRIES", response.data);
+    try {
+      const response = await axios.get(process.env.VUE_APP_API_COUNTRIES);
+      commit("SET_COUNTRIES", response.data);
+    } catch (e) {
+      console.error(e.message);
+    }
   },
   country({ commit }, country) {
     commit("SET_COUNTRY", country);
   },
   async summaryGlobal({ commit }) {
-    const response = await axios.get(process.env.VUE_APP_API_SUMMARY);
-    commit("SET_SUMMARY_GLOBAL", response);
-    commit("SET_DATE_SUMMARY_GLOBAL", response);
+    try {
+      const response = await axios.get(process.env.VUE_APP_API_SUMMARY);
+      commit("SET_SUMMARY_GLOBAL", response);
+      commit("SET_DATE_SUMMARY_GLOBAL", response);
+    } catch (e) {
+      console.error(e.message);
+    }
+
     commit("SET_LOADING_SUMMARY_WORLD", false);
   },
   async summaryCountry({ commit }) {
-    commit("SET_LOADING_SUMMARY", true);
-    const response = await axios.get(process.env.VUE_APP_API_SUMMARY);
-    commit("SET_SUMMARY_COUNTRY", response);
-    commit("SET_LOADING_SUMMARY", false);
+    try {
+      commit("SET_LOADING_SUMMARY", true);
+      const response = await axios.get(process.env.VUE_APP_API_SUMMARY);
+      commit("SET_SUMMARY_COUNTRY", response);
+      commit("SET_LOADING_SUMMARY", false);
+    } catch (e) {
+      console.error(e.message);
+    }
   },
   async countryLongitudeLatitude({ commit }) {
-    const response = await axios.get(
-      process.env.VUE_APP_API_DAYONE + state.country
-    );
-    commit("SET_COUNTRY_LAT_LNG", response.data[0]);
-    commit("SET_ERROR_DATA", false);
+    try {
+      const response = await axios.get(
+        process.env.VUE_APP_API_DAYONE + state.country
+      );
+      commit("SET_COUNTRY_LAT_LNG", response.data[0]);
+      commit("SET_ERROR_DATA", false);
+    } catch (e) {
+      console.error(e.message);
+    }
   },
   async updateOptionsChart({ commit }) {
-    commit("SET_ERROR_DATA", false);
-    const response = await axios.get(
-      process.env.VUE_APP_API_TOTAL_COUNTRY +
-        state.country +
-        "?from=2020-03-01T00:00:00Z&e=" +
-        state.currentDate.toJSON()
-    );
-    commit("SET_LOADING_MAP", false);
-    if (response) {
-      commit("SET_DATA_CHART", response.data);
-    } else {
-      commit("SET_ERROR_DATA", true);
+    try {
+      const response = await axios.get(
+        process.env.VUE_APP_API_TOTAL_COUNTRY +
+          state.country +
+          "?from=2020-03-01T00:00:00Z&e=" +
+          state.currentDate.toJSON()
+      );
+      commit("SET_ERROR_DATA", false);
+      commit("SET_LOADING_MAP", false);
+      if (response) {
+        commit("SET_DATA_CHART", response.data);
+      } else {
+        commit("SET_ERROR_DATA", true);
+      }
+    } catch (e) {
+      console.error(e.message);
     }
+  },
+  updateTheme({ commit }, theme) {
+    commit("theme", theme);
   },
 };
 

@@ -5,9 +5,11 @@ import SummaryCountry from "@/components/dashboard/SummaryCountry.vue";
 import { createLocalVue, mount } from "@vue/test-utils";
 import getters from "../../store/modules/dashboard";
 import actions from "../../store/modules/dashboard";
+import mutations from "../../store/modules/dashboard";
 
 let testGetters = getters.getters;
 let testActions = actions.actions;
+let testMutations = mutations.mutations;
 const country = "Sweden";
 const summaryCountry = { test: "test" };
 const state = { country, summaryCountry };
@@ -35,6 +37,7 @@ describe("SummaryCountry.vue", () => {
   });
   let getters = testGetters;
   let actions = testActions;
+  let mutations = testMutations;
   let store = {};
   beforeEach(() => {
     vuetify = new Vuetify();
@@ -42,6 +45,7 @@ describe("SummaryCountry.vue", () => {
       state,
       getters,
       actions,
+      mutations
     });
   });
 
@@ -94,4 +98,12 @@ describe("SummaryCountry.vue", () => {
     expect(commit).toHaveBeenNthCalledWith(1, "SET_LOADING_SUMMARY", true);
     expect(commit).toHaveBeenNthCalledWith(2, "SET_SUMMARY_COUNTRY", true);
   });
+  it("watcher: getCountry", async () => {
+    const wrapper = mount(SummaryCountry, {
+      store,
+      localVue,
+      vuetify,
+    });
+    wrapper.vm.$options.watch.getCountry.call(wrapper.vm, "France");
+  })
 });

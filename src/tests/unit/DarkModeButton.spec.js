@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuetify from "vuetify";
 import DarkModeButton from "../../components/navigation/DarkModeButton.vue";
 import { createLocalVue, mount } from "@vue/test-utils";
-import navigation from "@/store/modules/navigation.js"
+import dashboard from "@/store/modules/dashboard.js"
 import store from '../../store/index'
 
 describe("DarkModeButton.vue", () => {
@@ -30,7 +30,7 @@ describe("DarkModeButton.vue", () => {
     });
     expect(wrapper.find('.mdi-moon-waxing-crescent').exists()).toBe(true)
   });
-  it("3.function", async () => {
+  it("3.function", () => {
     wrapper = mount(DarkModeButton, {
       localVue,
       vuetify,
@@ -40,8 +40,8 @@ describe("DarkModeButton.vue", () => {
     const button = wrapper.find('.v-btn')
     expect(button.exists()).toBe(true)
     button.vm.$emit('click')
-    await wrapper.vm.$nextTick()
-    await navigation.actions.updateTheme({ commit }, 'dark')
+    wrapper.vm.$nextTick()
+    dashboard.actions.updateTheme({ commit }, 'dark')
     expect(commit).toHaveBeenCalledWith(
       "theme", 'dark')
   })

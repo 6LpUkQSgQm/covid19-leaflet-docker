@@ -11,7 +11,7 @@ describe("Autocomplete.vue", () => {
   let vuetify;
   let wrapper;
   Vue.use(Vuetify);
-  beforeEach(() => {
+  beforeEach(async () => {
     vuetify = new Vuetify();
     jest.useFakeTimers();
   });
@@ -83,10 +83,16 @@ describe("Autocomplete.vue", () => {
       store,
     });
     expect(wrapper.vm.loading).toBe(false);
-    wrapper.vm.$options.watch.search.call(wrapper.vm, 'Fra');
+    wrapper.vm.$options.watch.search.call(wrapper.vm, "France");
     expect(wrapper.vm.loading).toBe(true);
     expect(wrapper.vm.items).toStrictEqual([]);
-    jest.advanceTimersByTime(1000);
+    wrapper.vm.$store.commit("SET_COUNTRIES", [
+      { Country: "France" },
+      { Country: "Sweden" },
+    ]);
+
+    jest.advanceTimersByTime(2000);
     expect(wrapper.vm.loading).toBe(false);
+    //expect(wrapper.vm.items).toStrictEqual("");
   });
 });

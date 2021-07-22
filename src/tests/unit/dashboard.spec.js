@@ -101,13 +101,19 @@ describe("store/modules/dashboard.js", () => {
     expect(commit).toHaveBeenCalledWith("SET_COUNTRY", "France");
     // countryLongitudeLatitude
     commit = jest.fn();
-    const response = await axios.get(
-      process.env.VUE_APP_API_DAYONE + state.country
-    );
-    await dashboard.actions.countryLongitudeLatitude(
-      { commit },
-      response.data[0]
-    );
+    let response = undefined;
+    try {
+      response = await axios.get(
+        process.env.VUE_APP_API_DAYONE + state.country
+      );
+    } catch (e) {
+      console.error(e.message);
+    }
+    await dashboard.actions
+      .countryLongitudeLatitude({ commit }, response.data[0])
+      .catch((e) => {
+        console.error(e.message);
+      });
     expect(commit).toHaveBeenCalledTimes(2);
     expect(commit).toHaveBeenNthCalledWith(
       1,
@@ -117,7 +123,7 @@ describe("store/modules/dashboard.js", () => {
     expect(commit).toHaveBeenNthCalledWith(2, "SET_ERROR_DATA", false);
   });
 
- /*  it("4. actions updateOptionChart", async () => {
+  /*  it("4. actions updateOptionChart", async () => {
     let commit = jest.fn();
     const response = await axios.get(
       process.env.VUE_APP_API_TOTAL_COUNTRY +

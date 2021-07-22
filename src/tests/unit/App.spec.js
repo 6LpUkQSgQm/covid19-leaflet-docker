@@ -1,9 +1,10 @@
 import Vue from "vue";
 import Vuetify from "vuetify";
 import App from "../../App";
-import { createLocalVue, shallowMount } from "@vue/test-utils";
+import { createLocalVue, mount } from "@vue/test-utils";
+import store from "@/store/index.js";
 
-describe("App.vue", () => {
+describe("1. App.vue", () => {
   const localVue = createLocalVue();
   
   let vuetify;
@@ -16,12 +17,20 @@ describe("App.vue", () => {
     vuetify = new Vuetify();
   });
 
-  it("should have a v-app", () => {
-    const wrapper = shallowMount(App, {
+  it("2. should have a v-app", () => {
+    const wrapper = mount(App, {
       localVue,
       vuetify,
+      store
     });
-    expect(wrapper.html()).toMatchSnapshot();
+    expect(wrapper.find(".v-app"));
+  });
+  it("3. theme", () => {
+    const wrapper = mount(App, {
+      localVue,
+      vuetify,
+      store
+    });
     expect(wrapper.find(".v-app"));
   });
 });
