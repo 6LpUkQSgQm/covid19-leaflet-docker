@@ -1,4 +1,4 @@
-FROM node:17.0.0-buster-slim
+FROM node:17.0.0-bullseye-slim
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install -g npm@7.7.6 --silent
