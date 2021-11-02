@@ -2,7 +2,7 @@ language: node_js
 env:
   - VUE_APP_VERSION = 'covid19-leaflet-docker v0.2'
 node_js:
-  - 14
+  - 17
 install:
   - yarn
 cache:

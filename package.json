@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test": "vue-cli-service test:unit a -u",
-    "lint": "vue-cli-service lint",
-    "build:prod": "vue-cli-service build --mode production",
-    "build:staging": "vue-cli-service build --mode staging"
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "test": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service test:unit a -u",
+    "lint": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint",
+    "build:prod": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build --mode production",
+    "build:staging": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build --mode staging"
   },
   "dependencies": {
     "apexcharts": "^3.26.0",
