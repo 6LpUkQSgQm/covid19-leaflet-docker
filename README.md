@@ -3,7 +3,7 @@
 <a href="https://github.com/JulienChapron/covid19-leaflet-docker/main/LICENSE">
  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="covid19-leaflet-docker is released under the MIT license." />
 </a>
-![Known Vulnerabilities](https://snyk.io/test/github/JulienChapron/covid19-leaflet-docker/badge.svg)
+[![Known Vulnerabilities](https://snyk.io/test/github/JulienChapron/covid19-leaflet-docker/badge.svg)]
 
 
 ### Theme
