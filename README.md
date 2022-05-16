@@ -7,6 +7,8 @@
 [![Build Status](https://travis-ci.org/JulienChapron/covid19-leaflet-docker.svg?branch=main)](https://travis-ci.org/JulienChapron/covid19-leaflet-docker)
 ![Known Vulnerabilities](https://snyk.io/test/github/JulienChapron/covid19-leaflet-docker/badge.svg)
 [![Code Climate](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker/badges/gpa.svg)](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker) 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
 
 ### Theme
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/theme.gif)
