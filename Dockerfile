@@ -1,4 +1,4 @@
-FROM node:17.7.1-bullseye-slim
+FROM node:17.8-bullseye-slim
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install -g npm@latest --silent
