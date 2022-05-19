@@ -10,18 +10,18 @@
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
 
-### Theme
+## Theme
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/theme.gif)
 
-### Autocomplete
+## Autocomplete
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/covid19-leaflet-docker-autocomplete.gif)
 
-### Chart
+## Chart
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/covid19-leaflet-docker-chart.gif)
 
 <https://apexcharts.com/>
 
-### Map
+## Map
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/covid19-leaflet-docker-map.gif)
 
 <https://vue2-leaflet.netlify.app/>
@@ -81,5 +81,5 @@ yarn install && docker build -t covid19-leaflet-docker .
 
 ***Jest and unit testing
 ***
-### Unit testing coverage
+## Unit testing coverage
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/test1.png)
