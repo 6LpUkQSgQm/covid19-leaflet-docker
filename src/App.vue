@@ -1,5 +1,4 @@
-<template id="app"
->
+<template id="app">
   <v-app
     class="my-app"
     :style="{ background: $vuetify.theme.themes[theme].background }"
@@ -16,7 +15,7 @@ import Footer from "@/layouts/Footer";
 import Dashboard from "@/pages/Dashboard";
 
 export default {
-  name:"App",
+  name: "App",
   components: {
     Navigation,
     Dashboard,
@@ -30,8 +29,8 @@ export default {
 };
 </script>
 <style>
-.myapp{
-  position:relative;
+.myapp {
+  position: relative;
 }
 .my-app.v-application .primary--text {
   color: grey !important;
