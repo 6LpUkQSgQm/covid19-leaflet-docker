@@ -9,6 +9,7 @@
 [![Code Climate](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker/badges/gpa.svg)](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker) 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/221e245f1d9d49468603b0dc261a9618)](https://www.codacy.com/gh/JulienChapron/covid19-leaflet-docker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JulienChapron/covid19-leaflet-docker&amp;utm_campaign=Badge_Grade)
 
 ## Theme
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/theme.gif)
