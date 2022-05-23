@@ -6,32 +6,36 @@
 
 [![Build Status](https://travis-ci.org/JulienChapron/covid19-leaflet-docker.svg?branch=main)](https://travis-ci.org/JulienChapron/covid19-leaflet-docker)
 ![Known Vulnerabilities](https://snyk.io/test/github/JulienChapron/covid19-leaflet-docker/badge.svg)
-[![Code Climate](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker/badges/gpa.svg)](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker) 
+[![Code Climate](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker/badges/gpa.svg)](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/context:javascript)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/221e245f1d9d49468603b0dc261a9618)](https://www.codacy.com/gh/JulienChapron/covid19-leaflet-docker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JulienChapron/covid19-leaflet-docker&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/221e245f1d9d49468603b0dc261a9618)](https://www.codacy.com/gh/JulienChapron/covid19-leaflet-docker/dashboard?utm_source=github.com&utm_medium=referral&utm_content=JulienChapron/covid19-leaflet-docker&utm_campaign=Badge_Grade)
 
 ## Theme
+
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/theme.gif)
 
 ## Autocomplete
+
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/covid19-leaflet-docker-autocomplete.gif)
 
 ## Chart
+
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/covid19-leaflet-docker-chart.gif)
 
 <https://apexcharts.com/>
 
 ## Map
+
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/covid19-leaflet-docker-map.gif)
 
 <https://vue2-leaflet.netlify.app/>
 
 ## Tech Stack
 
-* <img src="https://www.toutjavascript.com/demo/vue/img/logo-vue.82b9c7a5.png" alt="logo-vue" height="50"/> Vuejs <https://vuejs.org>
-* <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" alt="logo-vuetify" height="50"/> Vuetify <https://vuetifyjs.com/en/>
-* <img src="https://user-images.githubusercontent.com/7110136/29002857-9e802f08-7ab4-11e7-9c31-604b5d0d0c19.png" alt="logo-vuex" height="50"/> Vuex <https://vuex.vuejs.org//>
+*   <img src="https://www.toutjavascript.com/demo/vue/img/logo-vue.82b9c7a5.png" alt="logo-vue" height="50"/> Vuejs <https://vuejs.org>
+*   <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" alt="logo-vuetify" height="50"/> Vuetify <https://vuetifyjs.com/en/>
+*   <img src="https://user-images.githubusercontent.com/7110136/29002857-9e802f08-7ab4-11e7-9c31-604b5d0d0c19.png" alt="logo-vuex" height="50"/> Vuex <https://vuex.vuejs.org//>
 
 ## Project Description
 
@@ -76,11 +80,14 @@ yarn install && docker build -t covid19-leaflet-docker .
 
 ## Version 0.1
 
-***Initial
+\*\*\*Initial
 
 ## Version 0.2
 
-***Jest and unit testing
-***
+\*\*\*Jest and unit testing
+
+---
+
 ## Unit testing coverage
+
 ![alt text](https://raw.githubusercontent.com/JulienChapron/covid19-leaflet-docker/main/readme/test1.png)
