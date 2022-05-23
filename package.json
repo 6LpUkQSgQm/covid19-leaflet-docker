@@ -71,7 +71,7 @@
         "error",
         {
           "version": ">=8.0.0",
-          "ignores": ["vue", "axios", "vuetify", "vuex"],
+          "ignores": ["vue", "axios", "vuetify", "vuex"]
         }
       ]
     },
