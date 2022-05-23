@@ -7,7 +7,6 @@
 }
 
 .leaflet-cluster-spider-leg {
-  /* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
   -webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out,
     -webkit-stroke-opacity 0.3s ease-in;
   -moz-transition: -moz-stroke-dashoffset 0.3s ease-out,
