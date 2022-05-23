@@ -2,8 +2,11 @@
   "name": "news-covid19",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
-    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "test": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service test:unit a -u",
     "lint": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint",
