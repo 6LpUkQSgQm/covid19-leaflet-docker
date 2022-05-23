@@ -8,7 +8,7 @@
 ![Known Vulnerabilities](https://snyk.io/test/github/JulienChapron/covid19-leaflet-docker/badge.svg)
 [![Code Climate](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker/badges/gpa.svg)](https://codeclimate.com/github/JulienChapron/covid19-leaflet-docker) 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/JulienChapron/covid19-leaflet-docker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JulienChapron/covid19-leaflet-docker/context:javascript)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/221e245f1d9d49468603b0dc261a9618)](https://www.codacy.com/gh/JulienChapron/covid19-leaflet-docker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JulienChapron/covid19-leaflet-docker&amp;utm_campaign=Badge_Grade)
 
 ## Theme
