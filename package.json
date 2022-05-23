@@ -59,6 +59,9 @@
     "env": {
       "node": true
     },
+    "plugins": [
+      "node"
+    ],
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
