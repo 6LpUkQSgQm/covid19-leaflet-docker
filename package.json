@@ -66,7 +66,15 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+      "node/no-unsupported-features/es-syntax": [
+        "error",
+        {
+          "version": ">=8.0.0",
+          "ignores": ["vue", "axios", "vuetify", "vuex"],
+        }
+      ]
+    },
     "overrides": [
       {
         "files": [
