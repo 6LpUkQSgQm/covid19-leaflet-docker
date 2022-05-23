@@ -5,14 +5,16 @@
 </template>
 
 <script>
-import { MarkerClusterGroup } from 'leaflet.markercluster';
-import { findRealParent, propsBinder } from 'vue2-leaflet';
-import { DomEvent } from 'leaflet';
+import { MarkerClusterGroup } from "leaflet.markercluster";
+import { findRealParent, propsBinder } from "vue2-leaflet";
+import { DomEvent } from "leaflet";
 
 const props = {
   options: {
     type: Object,
-    default() { return {}; },
+    default() {
+      return {};
+    },
   },
 };
 export default {
@@ -30,7 +32,7 @@ export default {
     this.parentContainer = findRealParent(this.$parent);
     this.parentContainer.addLayer(this);
     this.$nextTick(() => {
-      this.$emit('ready', this.mapObject);
+      this.$emit("ready", this.mapObject);
     });
   },
   beforeDestroy() {
