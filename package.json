@@ -54,18 +54,6 @@
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
-  "node": {
-    "resolvePaths": [
-      "node_modules/@types"
-    ],
-    "tryExtensions": [
-      ".js",
-      ".json",
-      ".node",
-      ".ts",
-      ".d.ts"
-    ]
-  },
   "eslintConfig": {
     "root": true,
     "env": {
@@ -78,7 +66,16 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "type": "commonjs",
+    "settings": {
+      "node": {
+        "tryExtensions": [
+          ".js",
+          ".json",
+          ".node",
+          ".ts"
+        ]
+      }
+    },
     "rules": {
       "node/no-unsupported-features/es-syntax": [
         "error",
