@@ -1,4 +1,4 @@
-# Simple COVID-19 outbreak evolution dashboard
+# Simple COVID-19 outbreak evolution dashboard with vue.js and Vuetify
 
 <a href="https://github.com/JulienChapron/covid19-leaflet-docker/main/LICENSE">
  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="covid19-leaflet-docker is released under the Public License v3.0." />
