@@ -16,7 +16,7 @@
   "dependencies": {
     "apexcharts": "^3.29.0",
     "axios": "^0.26.0",
-    "core-js": "^3.19.0",
+    "core-js": "^3.22.3",
     "dotenv-webpack": "^1.8.0",
     "es6-promise": "^4.2.8",
     "eslint-config-airbnb-base": "^14.0.0",
