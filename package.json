@@ -14,7 +14,7 @@
     "build:staging": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build --mode staging"
   },
   "dependencies": {
-    "apexcharts": "^3.35.0",
+    "apexcharts": "^3.36.3",
     "axios": "^0.26.0",
     "core-js": "^3.22.3",
     "dotenv-webpack": "^1.8.0",
